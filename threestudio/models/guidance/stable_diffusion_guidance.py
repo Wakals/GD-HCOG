@@ -19,7 +19,8 @@ from threestudio.utils.typing import *
 class StableDiffusionGuidance(BaseObject):
     @dataclass
     class Config(BaseObject.Config):
-        pretrained_model_name_or_path: str = "runwayml/stable-diffusion-v1-5"
+        # pretrained_model_name_or_path: str = "runwayml/stable-diffusion-v1-5" # 0.19.3
+        pretrained_model_name_or_path: str = "stabilityai/stable-diffusion-3-medium-diffusers"
         enable_memory_efficient_attention: bool = False
         enable_sequential_cpu_offload: bool = False
         enable_attention_slicing: bool = False
